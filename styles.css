@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.header {
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 15px;
+    font-size: 30px;
+}
+
+.header h2 span {
+    background: -webkit-linear-gradient(skyblue, skyblue, white, red, blue, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2.5px burlywood;
+}
+
+.header h2 {
+    background: -webkit-linear-gradient(rgb(0, 175, 255), rgb(0, 175, 255), white, rgb(0, 175, 255), rgb(0, 175, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2.5px burlywood;
+    margin-bottom: 0;
+}
+
+.comment-section {
+    font-family: 'Fredoka', sans-serif;
+}
+
+.comment-header {
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+    display: flex;
+}
+
+.comment-number {
+    padding-right: 40px;
+}
+
+.comment-sort a {
+    text-decoration: none;
+    color: white;
+}
+
+.comment-bar {
+    display: flex;
+}
+
+.reply-bar {
+    display: flex;
+}
+
+.comment-bar-profile {
+    padding-top: 5px;
+    padding-right: 20px;
+    font-size: 30px;
+}
+
+.comment-reply-profile {
+    padding-top: 5px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.comment-bar-box {
+    width: 60%;
+}
+
+.comment-reply-box {
+    width: 100%;
+}
+
+#commenttype {
+    position: relative;
+    text-align: left;
+    height: auto;
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+#commentreply {
+    position: relative;
+    text-align: left;
+    height: auto;
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+#commenttype:after {
+    display: block;
+    content: '';
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    border-bottom: 1px solid white;
+}
+
+#commentreply:after {
+    display: block;
+    content: '';
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+    border-bottom: 1px solid white;
+}
+
+#commenttype:focus:after {
+    transform: scaleX(1);
+}
+
+#commentreply:focus:after {
+    transform: scaleX(1);
+}
+
+#commenttype:empty::before {
+    content: attr(data-placeholder);
+}
+
+#commentreply:empty::before {
+    content: attr(data-placeholder);
+}
+
+.comment-bar-buttons {
+    float: right;
+    display: none;
+}
+
+.comment-reply-buttons {
+    float: right;
+}
+
+.comment-bar-buttons input,
+button {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.comment-reply-buttons input,
+button {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.comment-bar-buttons input {
+    background-color: gray;
+    color: gainsboro;
+}
+
+.comment-reply-buttons input {
+    background-color: gray;
+    color: gainsboro;
+}
+
+.comment-bar-buttons button {
+    background-color: transparent;
+    color: white;
+}
+
+.comment-reply-buttons button {
+    background-color: transparent;
+    color: white;
+}
+
+.comment-area {
+    display: flex;
+    margin-top: 20px;
+}
+
+.reply-area {
+    display: flex;
+    margin-top: 20px;
+}
+
+.comment-area-profile {
+    padding-top: 5px;
+    padding-right: 20px;
+    font-size: 30px;
+}
+
+.reply-area-profile {
+    padding-top: 5px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.comment-area-box {
+    width: 60%;
+}
+
+.reply-area-box {
+    width: 100%;
+}
+
+.comment-area-name {
+    text-align: left;
+    font-size: 12.5px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.comment-area-name button {
+    background-color: transparent;
+    color: white;
+    padding: 0;
+}
+
+.reply-area-name {
+    text-align: left;
+    font-size: 12.5px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.reply-area-name button {
+    background-color: transparent;
+    color: white;
+    padding: 0;
+}
+
+.comment-area-text {
+    text-align: left;
+    font-size: 14px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.reply-area-text {
+    text-align: left;
+    font-size: 14px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.comment-area-buttons {
+    display: flex;
+}
+
+.reply-area-buttons {
+    display: flex;
+}
+
+.like {
+    padding-right: 25px;
+}
+
+.like button {
+    background-color: transparent;
+    color: white;
+    padding: 0;
+    padding-right: 4px;
+}
+
+span {
+    font-family: 'Fredoka', sans-serif;
+}
+
+.dislike {
+    padding-right: 30px;
+}
+
+.dislike button {
+    background-color: transparent;
+    color: white;
+    padding: 0;
+    padding-right: 4px;
+}
+
+.reply {
+    background-color: transparent;
+    color: darkgrey;
+    padding: 0;
+}
+
+.comment-area-replies {
+    width: 100%;
+}
+
+.comment-area-more a {
+    text-decoration: none;
+    color: white;
+    font-size: 12.5px;
+}
+
+.reply-area-more a {
+    text-decoration: none;
+    color: white;
+    font-size: 12.5px;
+}

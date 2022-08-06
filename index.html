@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Comments Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <center class="container" id="contain">
+
+        <!-- <div class="image">
+            <img src="thor.png" width="30%">
+        </div>
+        <div class="header">
+            <h2><span>THOR </span>: GOD of THUNDER</h2>
+        </div> -->
+        <div class="comment-section" id="comment-sec">
+            <div class="comment-header">
+                <div class="comment-number">
+                    <p class="comment-data" id="numb">0 Comments</p>
+                </div>
+                <!-- <div class="comment-sort">
+                    <a href=""><i class="fa fa-bars" style="display:inline-block; padding-right: 7px;"></i>
+                    <p class="" style="display:inline-block;">SORT BY</p></a>
+                </div> -->
+            </div>
+            <div class="comment-bar">
+                <div class="comment-bar-profile">
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="comment-bar-box">
+                    <div class="comment-bar-type">
+                        <div data-placeholder="Add a comment..." onclick="typein()" oninput="typein()" id="commenttype" contenteditable="true"></div>
+                    </div>
+                    <div class="comment-bar-buttons">
+                        <button onclick="cancel()" id="commentcancel">Cancel</button>
+                        <input type="submit" value="Comment" id="commentinput">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer ">
+
+        </div>
+    </center>
+</body>
+<script src="index.js "></script>
+
+</html>
