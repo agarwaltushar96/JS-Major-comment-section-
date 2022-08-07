@@ -40,6 +40,7 @@ function remove(ev) {
 
 function check(ev) {
     if (hasClass(ev.target.parentElement.parentElement, "like")) {
+        ev.target.className = "fa fa-thumbs-up";
         if (ev.target.parentElement.nextElementSibling.textContent == "")
             ev.target.parentElement.nextElementSibling.textContent = "1";
         else {
@@ -48,6 +49,7 @@ function check(ev) {
             ev.target.parentElement.nextElementSibling.textContent = parseInt(abc[0]) + 1;
         }
     } else if (hasClass(ev.target.parentElement.parentElement, "dislike")) {
+        ev.target.className = "fa fa-thumbs-down";
         if (ev.target.parentElement.nextElementSibling.textContent == "")
             ev.target.parentElement.nextElementSibling.textContent = "1";
         else {
@@ -78,7 +80,7 @@ function addComment(ev) {
                 </div>
                 <div class="comment-area-box">
                     <div class="comment-area-name">
-                        <h3 id="user-name" style="margin: 0; font-weight: 300; width:99%; float:left;">asdad</h3>
+                        <h3 id="user-name" style="margin: 0; font-weight: 300; width:99%; float:left;">Your Name</h3>
                         <div class="comment-area-more" style="float:right;display:inline-block;">
                         <button onclick="remove(event)">DELETE</button>
                         </div>
@@ -108,7 +110,7 @@ function addComment(ev) {
                 </div>
                 <div class="reply-area-box">
                     <div class="reply-area-name">
-                        <h3 id="user-name" style="margin: 0; font-weight: 300; width:99%; float:left;">asdad</h3>
+                        <h3 id="user-name" style="margin: 0; font-weight: 300; width:99%; float:left;">Your Name</h3>
                         <div class="reply-area-more " style="float:right;display:inline-block;">
                         <button onclick="remove(event)">DELETE</button>
                         </div>
